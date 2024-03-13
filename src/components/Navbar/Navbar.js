@@ -16,9 +16,11 @@ const Navbar = () => {
             <li>Locations</li>
           </div>
           <div className="hidden md:flex items-center space-x-4">
+            <Link href="/login">
             <button className=" text-white px-4 py-2 rounded hover:text-gray-200">
               Login
             </button>
+            </Link>
             <Link href="/signup">
             <button className="bg-rose-500 text-gray-800 px-4 py-2 rounded hover:bg-rose-400">
               Register

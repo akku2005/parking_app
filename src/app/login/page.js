@@ -1,7 +1,11 @@
 export default function LoginPage(){
     return(
-        <div>
-            <h1>Akash</h1>
-        </div>
+        <section>
+            <main>
+                <div>
+                    <h1>Login Page</h1>
+                </div>
+            </main>
+        </section>
     )
 }
