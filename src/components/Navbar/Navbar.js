@@ -17,7 +17,7 @@ const Navbar = () => {
               />
             </Link>
           </div>
-          <div className="hidden md:flex items-center space-x-4 list-none font-medium gap-5">
+          <div className="hidden md:flex items-center space-x-4 list-none font-medium gap-5 text-white">
             <li>Home</li>
             <li>Services</li>
             <li>Contact</li>

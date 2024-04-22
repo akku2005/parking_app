@@ -29,8 +29,11 @@ const Main = () => {
           </div>
         </div>
         <div className="gap-5 flex justify-center text-center mt-24">
-        <button className="border p-4 bg-gradient-to-r from-purple-600 via-pink-600 to-blue-600 bg-clip-text text-transparent hover:animate-pulse"> Get Started </button>
-          <button>Learn More →</button>
+          <button className="border p-4 bg-gradient-to-r from-purple-600 via-pink-600 to-blue-600 bg-clip-text text-transparent hover:animate-pulse">
+            {" "}
+            Get Started{" "}
+          </button>
+          <button className="text-white">Learn More →</button>
         </div>
       </main>
     </section>

@@ -1,6 +1,5 @@
 import React from "react";
 import Image from "next/image";
-import "../../style/layout.css";
 import notificationIcon from "../../assets/icons/bell-iso-premium.png";
 import settingsIcon from "../../assets/icons/setting-iso-premium.png";
 import avatarIcon from "../../assets/icons/boy-iso-premium.png";
@@ -12,6 +11,7 @@ import { AiOutlineSetting } from "react-icons/ai";
 import { MdOutlineSupportAgent } from "react-icons/md";
 import { HiOutlineLogout } from "react-icons/hi";
 import { BsFillSearchHeartFill } from "react-icons/bs";
+import "../../style/layout.css";
 
 const Layout = ({ children }) => {
   return (
@@ -20,9 +20,12 @@ const Layout = ({ children }) => {
       <div className="sidebar">
         <div className="p-3">
           <div className="p-0 flex items-center justify-center mb-5 mt-5">
-            <h1 className="text-center font-semibold text-2xl ">Dashboard</h1>
+            <h1 className="text-center font-semibold text-3xl text-white ">
+              Dashboard
+            </h1>
           </div>
 
+          {/* Sidebar Links */}
           <ul className="ml-5 my-list font-semibold">
             <li>
               <a href="/dashboard/overview" className="flex gap-3 items-center">
@@ -113,7 +116,9 @@ const Layout = ({ children }) => {
       </div>
       <div className="flex flex-col flex-1">
         {/* Top Navbar */}
-        <nav className="navbar h-14">
+        <nav className="navbar h-14 mt-2">
+          {" "}
+          {/* Change bg-gray-900 to the desired background color */}
           <div className="container mx-auto flex justify-between items-center h-full">
             {/* Left side with search box */}
             <div className="flex items-center">
@@ -162,10 +167,12 @@ const Layout = ({ children }) => {
             </div>
           </div>
         </nav>
-        <hr className="mt-2 mx-4 " />
-
+        <hr className="mx-6" />
         {/* Main Content */}
-        <div className="container mx-auto mt-4 flex-1 p-6 text-white">
+        <div
+          className="container mx-auto mt-4 flex-1 p-6 text-white"
+          style={{ overflowY: "auto", maxHeight: "calc(100vh - 60px)" }}
+        >
           {children}
         </div>
       </div>

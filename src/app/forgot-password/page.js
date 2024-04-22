@@ -26,7 +26,7 @@ const Page = () => {
   };
 
   return (
-    <div className="bg-black h-screen flex justify-center items-center">
+    <div className="bg-black h-screen flex justify-center items-center overflow-hidden">
       <div className="grid grid-cols-1 sm:grid-cols-2 w-full">
         <div className="hidden sm:block h-full">
           <Image
@@ -75,7 +75,7 @@ const Page = () => {
               className="max-w-[400px] w-full mx-auto rounded-lg bg-white/5 backdrop-blur-sm border border-white/5 p-8 px-8"
               onSubmit={handleVerificationSubmit}
             >
-              <h2 className="text-3xl dark:text-white font-sans text-center">
+              <h2 className="text-3xl text-white font-sans text-center">
                 Enter Verification Code
               </h2>
               <div className="flex flex-col text-white py-2">

@@ -1,7 +1,8 @@
 import React from "react";
 
 const page = () => {
-  return <div>akash</div>;
+  return <div>page</div>;
 };
 
 export default page;
+page;

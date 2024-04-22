@@ -41,7 +41,7 @@ export default function Login() {
   }, [isLoggedIn]);
 
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 h-screen w-full">
+    <div className="grid grid-cols-1 sm:grid-cols-2 h-screen w-full bg-black">
       <div className="hidden sm:block">
         <Image className="w-full h-full object-cover" src={loginImg} alt="" />
       </div>
@@ -51,9 +51,7 @@ export default function Login() {
           className="max-w-[400px] w-full mx-auto rounded-lg bg-white/5 backdrop-blur-sm  border border-white/10 p-8 px-8"
           onSubmit={handleSubmit}
         >
-          <h2 className="text-3xl dark:text-white font-sans text-center">
-            Login{" "}
-          </h2>
+          <h2 className="text-3xl text-white font-sans text-center">Login </h2>
           <div className="flex flex-col text-gray-400 py-2">
             <label>Username</label>
             <input
