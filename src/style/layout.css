@@ -1,0 +1,73 @@
+.sidebar {
+  background-color: black;
+  color: white;
+  width: 270px;
+  height: auto;
+  flex-shrink: 0;
+}
+
+.sidebar.dark {
+  background-color: black;
+  color: white; /* Change text color to white in dark mode */
+}
+
+.sidebar.dark h1 {
+  color: white; /* Change text color to white in dark mode */
+}
+
+.sidebar h1 {
+  font-size: 1.7rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin-top: 25px;
+  position: relative;
+}
+
+.sidebar a {
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  position: relative;
+}
+
+.sidebar a::before {
+  content: "";
+  position: absolute;
+  left: -12px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: rgb(244, 63, 95);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.sidebar a:hover{
+  background-color: rgb(244, 63, 95);
+  border-radius: 20px;
+}
+.sidebar a:hover::before { /* Added hover pseudo-class to show the effect on hover */
+  opacity: 1;
+}
+
+.sidebar a.active {
+  background-color: rgb(244, 63, 95); /* Red background color for active page */
+  color: white; /* White text color for active page */
+  width: 100%;
+  border-radius: 20px;
+}
+
+.sidebar a.active::before {
+  opacity: 1; /* Show the before element on hover */
+}
